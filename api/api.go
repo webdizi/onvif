@@ -12,10 +12,10 @@ import (
 
 	"github.com/beevik/etree"
 	"github.com/gin-gonic/gin"
-	"github.com/use-go/onvif"
-	"github.com/use-go/onvif/gosoap"
-	"github.com/use-go/onvif/networking"
-	wsdiscovery "github.com/use-go/onvif/ws-discovery"
+	"github.com/webdizi/onvif"
+	"github.com/webdizi/onvif/gosoap"
+	"github.com/webdizi/onvif/networking"
+	wsdiscovery "github.com/webdizi/onvif/ws-discovery"
 )
 
 func RunApi() {
