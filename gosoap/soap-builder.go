@@ -256,8 +256,8 @@ func (msg *SoapMessage) AddWSSecurity(username, password string) {
 	/*
 		Adding WS-Security namespaces to root element of SOAP message
 	*/
-	//msg.AddRootNamespace("wsse", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext1.0.xsd")
-	//msg.AddRootNamespace("wsu", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility1.0.xsd")
+	msg.AddRootNamespace("wsse", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext1.0.xsd")
+	msg.AddRootNamespace("wsu", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility1.0.xsd")
 
 	soapReq, err := xml.MarshalIndent(auth, "", "  ")
 	if err != nil {
